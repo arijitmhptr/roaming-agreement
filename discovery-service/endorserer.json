@@ -1,0 +1,48 @@
+[
+	{
+		"Chaincode": "agreement",
+		"EndorsersByGroups": {
+			"G0": [
+				{
+					"MSPID": "VodafoneMSP",
+					"LedgerHeight": 9,
+					"Endpoint": "peer0.vodafone.com:9051",
+					"Identity": "-----BEGIN CERTIFICATE-----\nMIICnjCCAkSgAwIBAgIUKfEFfPgBlRHfksxQubOIm9HT9IgwCgYIKoZIzj0EAwIw\naDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMt\nY2Etc2VydmVyMB4XDTIxMDMxMjEwMzQwMFoXDTIyMDMxMjEwMzkwMFowWzELMAkG\nA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBl\ncmxlZGdlcjENMAsGA1UECxMEcGVlcjEOMAwGA1UEAxMFcGVlcjAwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAARa+ihlOixlHdxC13Bt16RbvlLN+yey21/VFzLl3XXd\nMZ+CoPewDN8wPBc7fvQOPZdsLan+qY79wXIL2iLfXLomo4HYMIHVMA4GA1UdDwEB\n/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTni+gYAJ0ADe0cWCsgPwXV\n6kDuZjAfBgNVHSMEGDAWgBTR1pk8uzfPxBEoKD04SbJLuD+P0zAdBgNVHREEFjAU\nghJwZWVyMC52b2RhZm9uZS5jb20wVgYIKgMEBQYHCAEESnsiYXR0cnMiOnsiaGYu\nQWZmaWxpYXRpb24iOiIiLCJoZi5FbnJvbGxtZW50SUQiOiJwZWVyMCIsImhmLlR5\ncGUiOiJwZWVyIn19MAoGCCqGSM49BAMCA0gAMEUCIQD4bH3iDgttmfq6VYDeE8VK\nZECG8hSAaK/ShxJT1uEQQwIgTHkvLtEcl09vB584RCVvEaEGarxS5pzSA2l2/PPX\nm30=\n-----END CERTIFICATE-----\n"
+				}
+			],
+			"G1": [
+				{
+					"MSPID": "AirtelMSP",
+					"LedgerHeight": 9,
+					"Endpoint": "peer0.airtel.com:11051",
+					"Identity": "-----BEGIN CERTIFICATE-----\nMIICmzCCAkKgAwIBAgIUZzsYjRmwWijYf0mmCQQdkgAZ6AowCgYIKoZIzj0EAwIw\naDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMt\nY2Etc2VydmVyMB4XDTIxMDMxMjEwMzQwMFoXDTIyMDMxMjEwMzkwMFowWzELMAkG\nA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBl\ncmxlZGdlcjENMAsGA1UECxMEcGVlcjEOMAwGA1UEAxMFcGVlcjAwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAQVvBeURXP51v9giMZIDqvGJPMud/nlqCTw5OgBvKAb\ngJL7G5s2YdKs7fkKxoudCFP6Tz7IJGIokWQzkIOjuPOEo4HWMIHTMA4GA1UdDwEB\n/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRnVTEA/387BA1NfuuQxOJ6\nabx1gTAfBgNVHSMEGDAWgBTqSvxRNwimfxlTOfFc55Wr9mn/ojAbBgNVHREEFDAS\nghBwZWVyMC5haXJ0ZWwuY29tMFYGCCoDBAUGBwgBBEp7ImF0dHJzIjp7ImhmLkFm\nZmlsaWF0aW9uIjoiIiwiaGYuRW5yb2xsbWVudElEIjoicGVlcjAiLCJoZi5UeXBl\nIjoicGVlciJ9fTAKBggqhkjOPQQDAgNHADBEAiA8EKfrH+k/JvRohBurom+wke6l\nBvc0E+70YoSwtJjPPgIgJs3oEdEaHnAYE0mBUw2x+ATK4VhvWQQtemYwmeXderI=\n-----END CERTIFICATE-----\n"
+				}
+			],
+			"G2": [
+				{
+					"MSPID": "VerizonMSP",
+					"LedgerHeight": 9,
+					"Endpoint": "peer0.verizon.com:7051",
+					"Identity": "-----BEGIN CERTIFICATE-----\nMIICnDCCAkOgAwIBAgIUKJ2+pqFCVDgqneInjwYUzIECLzYwCgYIKoZIzj0EAwIw\naDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMt\nY2Etc2VydmVyMB4XDTIxMDMxMjEwMzMwMFoXDTIyMDMxMjEwMzgwMFowWzELMAkG\nA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBl\ncmxlZGdlcjENMAsGA1UECxMEcGVlcjEOMAwGA1UEAxMFcGVlcjAwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAT7sA/9WhnVJHLHTRPAQLexEJrQXbKz+5uo286RXI+p\n7ZXgtGtTwTyJLazJkpr9eZM33sSueeqEQ6yd+ANLFTY+o4HXMIHUMA4GA1UdDwEB\n/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQFuBsN3CnMBqJ1anjZs3iI\n5HkyRjAfBgNVHSMEGDAWgBRe+uo80W4mQA/5EVnjaPUGYrPOFjAcBgNVHREEFTAT\nghFwZWVyMC52ZXJpem9uLmNvbTBWBggqAwQFBgcIAQRKeyJhdHRycyI6eyJoZi5B\nZmZpbGlhdGlvbiI6IiIsImhmLkVucm9sbG1lbnRJRCI6InBlZXIwIiwiaGYuVHlw\nZSI6InBlZXIifX0wCgYIKoZIzj0EAwIDRwAwRAIgQM7FXsXU2p+Yhi3uqo6Lqegc\nSoQd1WXEhr/1X34JcL4CIHj58cWt0bHB0e4CY3M/afzq2zAGaha29pJrEnUWu1vk\n-----END CERTIFICATE-----\n"
+				}
+			]
+		},
+		"Layouts": [
+			{
+				"quantities_by_group": {
+					"G0": 1
+				}
+			},
+			{
+				"quantities_by_group": {
+					"G1": 1
+				}
+			},
+			{
+				"quantities_by_group": {
+					"G2": 1
+				}
+			}
+		]
+	}
+]

@@ -1,0 +1,12 @@
+version: 0
+
+tlsconfig:
+  certpath: ""
+  keypath: ""
+  peercacertpath: ../crypto-config/peerOrganizations/verizon.com/peers/peer0.verizon.com/msp/tlscacerts/tls-localhost-7054-VERIZON_RCA.pem
+  timeout: 0s
+  
+signerconfig:
+  mspid: VerizonMSP
+  identitypath: ../crypto-config/peerOrganizations/verizon.com/users/User@verizon.com/msp/signcerts/cert.pem
+  keypath: ../crypto-config/peerOrganizations/verizon.com/users/User@verizon.com/msp/keystore/eec918b8b9038c8c7926e162120e48d928816837a4c3670f0e28a478824d4809_sk

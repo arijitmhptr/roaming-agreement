@@ -1,0 +1,61 @@
+---
+name: roaming-contract-management
+version: 1.0.0
+client:
+  organization: Verizon
+  connection:
+    timeout:
+      peer:
+        endorser: '300'
+organizations:
+  Verizon:
+    mspid: VerizonMSP
+    peers:
+    - peer0.verizon.com
+    certificateAuthorities:
+    - ca.verizon.com
+peers:
+  peer0.verizon.com:
+    url: grpcs://localhost:7051
+    tlsCACerts:
+      pem: |
+          -----BEGIN CERTIFICATE-----
+          MIICFzCCAb2gAwIBAgIUUAqJ45OcjjdFFF1hZVoCn6OgAjMwCgYIKoZIzj0EAwIw
+          aDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK
+          EwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMt
+          Y2Etc2VydmVyMB4XDTIxMDMyNDA5NDQwMFoXDTM2MDMyMDA5NDQwMFowaDELMAkG
+          A1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBl
+          cmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMtY2Etc2Vy
+          dmVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0zivNO3tieBEpIYjxsN15O6o
+          VyCL5U5QNrnza+Y7jttbiTQDscbRud53UXNLo7wdbhulHZURKKPXVV0JtSLhMaNF
+          MEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYE
+          FDxC8fZ1iHIM1B2ET0BcESiPN+L4MAoGCCqGSM49BAMCA0gAMEUCIQDLv0o/YpmI
+          BwsekIjtBVZFzBO+pUvd2Z5u09v7DpzcWAIgb6GxZjZns7wPVDDREpuhAdJfdIZF
+          qH8RjqNZ5fEYsmQ=
+          -----END CERTIFICATE-----
+    grpcOptions:
+      ssl-target-name-override: peer0.verizon.com
+      hostnameOverride: peer0.verizon.com
+certificateAuthorities:
+  ca.verizon.com:
+    url: https://localhost:7054
+    caName: ca.verizon.com
+    tlsCACerts:
+      pem: 
+        - |
+          -----BEGIN CERTIFICATE-----
+          MIICFzCCAb2gAwIBAgIUUAqJ45OcjjdFFF1hZVoCn6OgAjMwCgYIKoZIzj0EAwIw
+          aDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK
+          EwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMt
+          Y2Etc2VydmVyMB4XDTIxMDMyNDA5NDQwMFoXDTM2MDMyMDA5NDQwMFowaDELMAkG
+          A1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBl
+          cmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMtY2Etc2Vy
+          dmVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0zivNO3tieBEpIYjxsN15O6o
+          VyCL5U5QNrnza+Y7jttbiTQDscbRud53UXNLo7wdbhulHZURKKPXVV0JtSLhMaNF
+          MEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYE
+          FDxC8fZ1iHIM1B2ET0BcESiPN+L4MAoGCCqGSM49BAMCA0gAMEUCIQDLv0o/YpmI
+          BwsekIjtBVZFzBO+pUvd2Z5u09v7DpzcWAIgb6GxZjZns7wPVDDREpuhAdJfdIZF
+          qH8RjqNZ5fEYsmQ=
+          -----END CERTIFICATE-----
+    httpOptions:
+      verify: false

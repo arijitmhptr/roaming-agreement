@@ -1,0 +1,63 @@
+---
+name: roaming-contract-management
+version: 1.0.0
+client:
+  organization: Vodafone
+  connection:
+    timeout:
+      peer:
+        endorser: '300'
+organizations:
+  Vodafone:
+    mspid: VodafoneMSP
+    peers:
+    - peer0.vodafone.com
+    certificateAuthorities:
+    - ca.vodafone.com
+peers:
+  peer0.vodafone.com:
+    url: grpcs://localhost:9051
+    tlsCACerts:
+      pem: |
+          -----BEGIN CERTIFICATE-----
+          MIICFzCCAb2gAwIBAgIUKOOpkEJ6miH9BWdQ7X1gkIWvfiQwCgYIKoZIzj0EAwIw
+          aDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK
+          EwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMt
+          Y2Etc2VydmVyMB4XDTIxMDMyNDA5NDQwMFoXDTM2MDMyMDA5NDQwMFowaDELMAkG
+          A1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBl
+          cmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMtY2Etc2Vy
+          dmVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjYxRkpiw/SAim2Ege+f0Nlhs
+          a6i21pUmljztjr7ArxjgO214cl59QfHE7wXYihK7F4spicpNFrlq2K7Nu30suKNF
+          MEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYE
+          FKOUABG6JYerwXf1tulQRcSfaT6wMAoGCCqGSM49BAMCA0gAMEUCIQD/p5/nODrk
+          c/LR8+soDCHXpcA85JNXZzND6bE4An2vVAIgZwWtEBjcWXzLH2vxgwJ8/OOm8z8A
+          vnq6dmFVOJATpRI=
+          -----END CERTIFICATE-----
+          
+    grpcOptions:
+      ssl-target-name-override: peer0.vodafone.com
+      hostnameOverride: peer0.vodafone.com
+certificateAuthorities:
+  ca.vodafone.com:
+    url: https://localhost:8054
+    caName: ca.vodafone.com
+    tlsCACerts:
+      pem: 
+        - |
+          -----BEGIN CERTIFICATE-----
+          MIICFzCCAb2gAwIBAgIUKOOpkEJ6miH9BWdQ7X1gkIWvfiQwCgYIKoZIzj0EAwIw
+          aDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK
+          EwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMt
+          Y2Etc2VydmVyMB4XDTIxMDMyNDA5NDQwMFoXDTM2MDMyMDA5NDQwMFowaDELMAkG
+          A1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBl
+          cmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMtY2Etc2Vy
+          dmVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjYxRkpiw/SAim2Ege+f0Nlhs
+          a6i21pUmljztjr7ArxjgO214cl59QfHE7wXYihK7F4spicpNFrlq2K7Nu30suKNF
+          MEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYE
+          FKOUABG6JYerwXf1tulQRcSfaT6wMAoGCCqGSM49BAMCA0gAMEUCIQD/p5/nODrk
+          c/LR8+soDCHXpcA85JNXZzND6bE4An2vVAIgZwWtEBjcWXzLH2vxgwJ8/OOm8z8A
+          vnq6dmFVOJATpRI=
+          -----END CERTIFICATE-----
+  
+    httpOptions:
+      verify: false

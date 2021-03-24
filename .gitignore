@@ -1,0 +1,9 @@
+crypto-config-cryptogen
+backend/node_modules
+chaincode/vendor
+.env
+backend/Verizon-Wallet
+backend/Vodafone-Wallet
+CA/fabric-ca
+crypto-config
+crypto-config-cryptogen

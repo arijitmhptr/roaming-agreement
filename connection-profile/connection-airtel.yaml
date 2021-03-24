@@ -1,0 +1,63 @@
+---
+name: roaming-contract-management
+version: 1.0.0
+client:
+  organization: Airtel
+  connection:
+    timeout:
+      peer:
+        endorser: '300'
+organizations:
+  Airtel:
+    mspid: AirtelMSP
+    peers:
+    - peer0.airtel.com
+    certificateAuthorities:
+    - ca.airtel.com
+peers:
+  peer0.airtel.com:
+    url: grpcs://localhost:11051
+    tlsCACerts:
+      pem: |
+          -----BEGIN CERTIFICATE-----
+          MIICFjCCAb2gAwIBAgIUYlTK2l/KomHXxB8gnaoKC74P/eAwCgYIKoZIzj0EAwIw
+          aDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK
+          EwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMt
+          Y2Etc2VydmVyMB4XDTIxMDMyNDA5NDQwMFoXDTM2MDMyMDA5NDQwMFowaDELMAkG
+          A1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBl
+          cmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMtY2Etc2Vy
+          dmVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFx8WRewX+NtZxoPsud3/drN
+          H7jKWFOL2gSd+bnbNoZa7owdRu6Ywl/YbdrBaObtxQWBhW1IGTG9MTEiDEv7TaNF
+          MEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYE
+          FF447HHYIPxbGXdMi1nXgXZ7s/OYMAoGCCqGSM49BAMCA0cAMEQCICFW1AfuN/RT
+          0DHsP5hOhyj+sOveYQ7jvUcoRwqS0DdNAiBNvL3tiwrqPbfN7MsCHpZNtEJ4haz+
+          CCvA0Cnk1YfmSw==
+          -----END CERTIFICATE-----
+          
+    grpcOptions:
+      ssl-target-name-override: peer0.airtel.com
+      hostnameOverride: peer0.airtel.com
+certificateAuthorities:
+  ca.airtel.com:
+    url: https://localhost:9054
+    caName: ca.airtel.com
+    tlsCACerts:
+      pem: 
+        - |
+          -----BEGIN CERTIFICATE-----
+          MIICFjCCAb2gAwIBAgIUYlTK2l/KomHXxB8gnaoKC74P/eAwCgYIKoZIzj0EAwIw
+          aDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK
+          EwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMt
+          Y2Etc2VydmVyMB4XDTIxMDMyNDA5NDQwMFoXDTM2MDMyMDA5NDQwMFowaDELMAkG
+          A1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBl
+          cmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRkwFwYDVQQDExBmYWJyaWMtY2Etc2Vy
+          dmVyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJFx8WRewX+NtZxoPsud3/drN
+          H7jKWFOL2gSd+bnbNoZa7owdRu6Ywl/YbdrBaObtxQWBhW1IGTG9MTEiDEv7TaNF
+          MEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYE
+          FF447HHYIPxbGXdMi1nXgXZ7s/OYMAoGCCqGSM49BAMCA0cAMEQCICFW1AfuN/RT
+          0DHsP5hOhyj+sOveYQ7jvUcoRwqS0DdNAiBNvL3tiwrqPbfN7MsCHpZNtEJ4haz+
+          CCvA0Cnk1YfmSw==
+          -----END CERTIFICATE-----
+          
+    httpOptions:
+      verify: false
