@@ -223,7 +223,7 @@ chaincodeQuery(){
     peer chaincode query -C $CHANNEL_NAME -n ${CC_NAME} -c '{"function":"GetAllAgreement","Args":[]}'
 }
 
-# presetup
+presetup
 packageChaincode
 installChaincode
 queryInstalled
